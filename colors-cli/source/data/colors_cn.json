@@ -1,4 +1,4 @@
-const colorsCN = [
+[
     {
         "name": "暗玉紫",
         "pinyin": "anyuzi",
@@ -11571,4 +11571,3 @@ const colorsCN = [
         "saturation": 0.3280941228569389
     }
 ]
-export default colorsCN

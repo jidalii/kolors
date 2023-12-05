@@ -1,8 +1,19 @@
 'use strict';
 import React from 'react';
 import {Text} from 'ink';
-import colorsCN from './data/colors_chinese.js';
-import colorsJP from './data/colors_japanese.js';
+import { readFile } from 'fs/promises';
+const colorsCN = JSON.parse(
+  await readFile(
+    new URL('./data/colors_cn.json', import.meta.url),
+	{ assert: { type: 'json' } }
+  )
+);
+const colorsJP = JSON.parse(
+  await readFile(
+    new URL('./data/colors_jp.json', import.meta.url),
+	{ assert: { type: 'json' } }
+  )
+);
 
 const colorList = {
 	red: '红',
@@ -52,7 +63,7 @@ const colorFilter = function (color, colorset) {
 	let filteredColor = colorFile.filter(c => c.tag.includes(color));
 	shuffleArray(filteredColor);
 
-	return filteredColor;
+	return filteredColor.slice(0, 10);
 };
 
 

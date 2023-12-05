@@ -1,6 +1,6 @@
 {
-	"name": "colors-cli",
-	"version": "0.1.0",
+	"name": "kolors",
+	"version": "0.1.1",
 	"license": "MIT",
 	"bin": "dist/cli.js",
 	"type": "module",
