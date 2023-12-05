@@ -22,26 +22,24 @@ const cli = meow(
 				type: 'boolean',
 				alias: 'h',
 			},
-				version: {
+			version: {
 				type: 'boolean',
 				alias: 'v',
 			},
 			colorset: {
-				type: "string",
-				alias: "c",
-				choices: ["cn", "jp"],
-				default: "cn"
+				type: 'string',
+				alias: 'c',
+				choices: ['cn', 'jp'],
+				default: 'cn',
 			},
 			model: {
-				type: "string",
-				alias: "m",
-				choices: ["hex", "rgb", "cmyk"],
-				default: "hex"
-			}
-		}
+				type: 'string',
+				alias: 'm',
+				choices: ['hex', 'rgb', 'cmyk'],
+				default: 'hex',
+			},
+		},
 	},
 );
 
 render(<App color={cli.input.at(0)} flags={cli.flags} />);
-
-

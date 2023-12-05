@@ -1,18 +1,16 @@
 'use strict';
 import React from 'react';
 import {Text} from 'ink';
-import { readFile } from 'fs/promises';
+import {readFile} from 'fs/promises';
 const colorsCN = JSON.parse(
-  await readFile(
-    new URL('./data/colors_cn.json', import.meta.url),
-	{ assert: { type: 'json' } }
-  )
+	await readFile(new URL('./data/colors_cn.json', import.meta.url), {
+		assert: {type: 'json'},
+	}),
 );
 const colorsJP = JSON.parse(
-  await readFile(
-    new URL('./data/colors_jp.json', import.meta.url),
-	{ assert: { type: 'json' } }
-  )
+	await readFile(new URL('./data/colors_jp.json', import.meta.url), {
+		assert: {type: 'json'},
+	}),
 );
 
 const colorList = {
@@ -27,26 +25,26 @@ const colorList = {
 };
 
 const chineseColorList = {
-    红:"red",
-    橙:"orange",
-    黄:"yellow",
-    绿:"green",
-    青:"cyan",
-    蓝:"blue",
-    紫:"purple",
-    灰:"grey",
-    棕:"brown",
-    白:"white",
-    粉:"pink",
-	黑: "black"
-}
+	红: 'red',
+	橙: 'orange',
+	黄: 'yellow',
+	绿: 'green',
+	青: 'cyan',
+	蓝: 'blue',
+	紫: 'purple',
+	灰: 'grey',
+	棕: 'brown',
+	白: 'white',
+	粉: 'pink',
+	黑: 'black',
+};
 
 const shuffleArray = function (array) {
 	for (let i = array.length - 1; i > 0; i--) {
-	  const j = Math.floor(Math.random() * (i + 1));
-	  [array[i], array[j]] = [array[j], array[i]];
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
 	}
-  }
+};
 
 const colorFilter = function (color, colorset) {
 	//  select colorset
@@ -57,7 +55,7 @@ const colorFilter = function (color, colorset) {
 		colorFile = colorsJP;
 	}
 	if (color in chineseColorList) {
-		color = chineseColorList[color]
+		color = chineseColorList[color];
 	}
 
 	let filteredColor = colorFile.filter(c => c.tag.includes(color));
@@ -66,37 +64,40 @@ const colorFilter = function (color, colorset) {
 	return filteredColor.slice(0, 10);
 };
 
-
-const chooseColorModel = function(color, flags) {
+const chooseColorModel = function (color, flags) {
 	// choose color model
 	let colorModel;
-	switch(flags.model) {
-		case "rgb":
+	switch (flags.model) {
+		case 'rgb':
 			colorModel = `rgb(${color.rgb.r},${color.rgb.g},${color.rgb.b})`;
 			break;
-		case "hex":
+		case 'hex':
 			colorModel = color.hex;
 			break;
-		case "cmyk":
-			colorModel = `cmyk(${color.cmyk.c},${color.cmyk.m},${color.cmyk.y},${color.cmyk.k})`;;
+		case 'cmyk':
+			colorModel = `cmyk(${color.cmyk.c},${color.cmyk.m},${color.cmyk.y},${color.cmyk.k})`;
 			break;
 		default:
-			colorModel = color.hex;	
+			colorModel = color.hex;
 	}
 	return colorModel;
-}
+};
 
 const App = ({color = 'yellow', flags = null}) => {
 	let colorList = colorFilter(color, flags?.colorset);
 
 	// Find the max length for hex codes and names for padding
-	const maxHexLength = Math.max(...colorList.map(color => chooseColorModel(color, flags).length));
+	const maxHexLength = Math.max(
+		...colorList.map(color => chooseColorModel(color, flags).length),
+	);
 	const maxNameLength = Math.max(...colorList.map(color => color.name.length));
-	const maxPinyinLength = Math.max(...colorList.map(color => color.pinyin.length));
-	
+	const maxPinyinLength = Math.max(
+		...colorList.map(color => color.pinyin.length),
+	);
+
 	return (
 		<>
-			<Text>{"  "}</Text>
+			<Text>{'  '}</Text>
 			{colorList.map(color => {
 				// choose text color
 				let colorText = chooseColorModel(color, flags);
@@ -108,12 +109,18 @@ const App = ({color = 'yellow', flags = null}) => {
 				// const paddedPinyin = color.pinyin;
 
 				return (
-					<Text key={color.hex} backgroundColor={color.hex} color={color.lightness > 0.5 ? "black" : "white"}>
-						{' ' + paddedHex} {paddedPinyin}{'  '}{color.name}{' '}
+					<Text
+						key={color.hex}
+						backgroundColor={color.hex}
+						color={color.lightness > 0.5 ? 'black' : 'white'}
+					>
+						{' ' + paddedHex} {paddedPinyin}
+						{'  '}
+						{color.name}{' '}
 					</Text>
 				);
 			})}
-			<Text>{"  "}</Text>
+			<Text>{'  '}</Text>
 		</>
 	);
 };
