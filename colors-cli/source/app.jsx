@@ -1,14 +1,14 @@
 'use strict';
 import React from 'react';
-import {Text} from 'ink';
+import {Text, Newline} from 'ink';
 import {readFile} from 'fs/promises';
 const colorsCN = JSON.parse(
-	await readFile(new URL('./data/colors_cn.json', import.meta.url), {
+	await readFile(new URL('./colors_cn.json', import.meta.url), {
 		assert: {type: 'json'},
 	}),
 );
 const colorsJP = JSON.parse(
-	await readFile(new URL('./data/colors_jp.json', import.meta.url), {
+	await readFile(new URL('./colors_jp.json', import.meta.url), {
 		assert: {type: 'json'},
 	}),
 );
@@ -48,12 +48,18 @@ const shuffleArray = function (array) {
 
 const colorFilter = function (color, colorset) {
 	//  select colorset
-	let colorFile = null;
-	if (colorset === 'cn') {
-		colorFile = colorsCN;
-	} else {
-		colorFile = colorsJP;
+	let colorFile;
+	switch (colorset) {
+		case 'cn':
+			colorFile = colorsCN;
+			break;
+		case 'jp':
+			colorFile = colorsJP;
+			break;
+		default:
+			console.log('invalid colorset');
 	}
+
 	if (color in chineseColorList) {
 		color = chineseColorList[color];
 	}
@@ -62,6 +68,7 @@ const colorFilter = function (color, colorset) {
 	shuffleArray(filteredColor);
 
 	return filteredColor.slice(0, 10);
+	// return filteredColor;
 };
 
 const chooseColorModel = function (color, flags) {
@@ -83,9 +90,11 @@ const chooseColorModel = function (color, flags) {
 	return colorModel;
 };
 
-const App = ({color = 'yellow', flags = null}) => {
-	let colorList = colorFilter(color, flags?.colorset);
-
+const App = ({colorSelect = 'green', flags = null}) => {
+	let colorList = colorFilter(colorSelect, flags?.c);
+	const uniqueSet = new Set(colorList);
+	const hasDuplicates = uniqueSet.size !== colorList.length;
+	const value = hasDuplicates ? "duplicate" : "no duplicate";
 	// Find the max length for hex codes and names for padding
 	const maxHexLength = Math.max(
 		...colorList.map(color => chooseColorModel(color, flags).length),
@@ -97,7 +106,7 @@ const App = ({color = 'yellow', flags = null}) => {
 
 	return (
 		<>
-			<Text>{'  '}</Text>
+			<Text >{'\t'}</Text>
 			{colorList.map(color => {
 				// choose text color
 				let colorText = chooseColorModel(color, flags);
@@ -106,21 +115,23 @@ const App = ({color = 'yellow', flags = null}) => {
 				const paddedHex = colorText.padEnd('  ' + maxHexLength, ' ');
 				const paddedName = color.name.padEnd('  ' + maxNameLength, ' ');
 				const paddedPinyin = color.pinyin.padEnd('  ' + maxPinyinLength, ' ');
-				// const paddedPinyin = color.pinyin;
 
 				return (
-					<Text
-						key={color.hex}
-						backgroundColor={color.hex}
-						color={color.lightness > 0.5 ? 'black' : 'white'}
-					>
-						{' ' + paddedHex} {paddedPinyin}
-						{'  '}
-						{color.name}{' '}
-					</Text>
+					<React.Fragment key={color.id}>
+						<Text
+							key={color.id}
+							backgroundColor={color.hex}
+							color={color.hsl.lightness >= 0.68 ? 'black' : 'white'}
+						>
+							{' ' + paddedHex} {paddedPinyin}
+							{'  '}
+							{color.name}{' '}
+						</Text>
+						{/* <Text>{color.hsl.lightness + '\t' + color.hsl.saturation + '\t' + color.hsl.hue}</Text> */}
+					</React.Fragment>
 				);
 			})}
-			<Text>{'  '}</Text>
+			<Text >{'\t'}</Text>
 		</>
 	);
 };
