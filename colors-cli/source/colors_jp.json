@@ -30,8 +30,9 @@
         "name": "紅梅",
         "pinyin": "KOHBAI",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#E16B8C",
         "rgb": {
@@ -81,8 +82,9 @@
         "name": "退紅",
         "pinyin": "TAIKOH",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#F8C3CD",
         "rgb": {
@@ -107,8 +109,9 @@
         "name": "一斥染",
         "pinyin": "IKKONZOME",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#F4A7B9",
         "rgb": {
@@ -133,6 +136,7 @@
         "name": "桑染",
         "pinyin": "KUWAZOME",
         "tag": [
+            "brown",
             "red"
         ],
         "hex": "#64363C",
@@ -158,8 +162,9 @@
         "name": "桃",
         "pinyin": "MOMO",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#F596AA",
         "rgb": {
@@ -358,8 +363,8 @@
         "name": "燕脂",
         "pinyin": "ENJI",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#9F353A",
         "rgb": {
@@ -460,6 +465,7 @@
         "pinyin": "KOKIAKE",
         "tag": [
             "brown",
+            "red",
             "orange"
         ],
         "hex": "#86473F",
@@ -533,6 +539,7 @@
         "name": "小豆",
         "pinyin": "AZUKI",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#954A45",
@@ -659,6 +666,7 @@
         "pinyin": "KURIUME",
         "tag": [
             "brown",
+            "red",
             "orange"
         ],
         "hex": "#904840",
@@ -684,8 +692,7 @@
         "name": "海老茶",
         "pinyin": "EBICHA",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#734338",
         "rgb": {
@@ -734,9 +741,7 @@
         "id": 5029,
         "name": "黒鳶",
         "pinyin": "KUROTOBI",
-        "tag": [
-            "orange"
-        ],
+        "tag": [],
         "hex": "#554236",
         "rgb": {
             "r": 85,
@@ -760,6 +765,7 @@
         "name": "紅鳶",
         "pinyin": "BENITOBI",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#994639",
@@ -810,6 +816,7 @@
         "name": "紅樺",
         "pinyin": "BENIKABA",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#B54434",
@@ -860,6 +867,7 @@
         "name": "珊瑚朱",
         "pinyin": "SANGOSYU",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#F17C67",
@@ -961,6 +969,7 @@
         "name": "芝翫茶",
         "pinyin": "SHIKANCHA",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#B55D4C",
@@ -1037,6 +1046,7 @@
         "name": "緋",
         "pinyin": "AKE",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#CC543A",
@@ -1062,8 +1072,7 @@
         "name": "鳶",
         "pinyin": "TOBI",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#724832",
         "rgb": {
@@ -1088,6 +1097,7 @@
         "name": "紅緋",
         "pinyin": "BENIHI",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#F75C2F",
@@ -1113,8 +1123,7 @@
         "name": "栗皮茶",
         "pinyin": "KURIKAWACHA",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#6A4028",
         "rgb": {
@@ -1414,9 +1423,7 @@
         "id": 5056,
         "name": "焦茶",
         "pinyin": "KOGECHA",
-        "tag": [
-            "orange"
-        ],
+        "tag": [],
         "hex": "#563F2E",
         "rgb": {
             "r": 86,
@@ -4847,7 +4854,6 @@
         "name": "紺",
         "pinyin": "KON",
         "tag": [
-            "blue",
             "black"
         ],
         "hex": "#0F2540",
@@ -4873,7 +4879,6 @@
         "name": "褐",
         "pinyin": "KACHI",
         "tag": [
-            "blue",
             "black"
         ],
         "hex": "#08192D",
@@ -4999,7 +5004,6 @@
         "name": "鉄紺",
         "pinyin": "TETSUKON",
         "tag": [
-            "purple",
             "black"
         ],
         "hex": "#261E47",
@@ -5075,7 +5079,6 @@
         "name": "紺桔梗",
         "pinyin": "KONKIKYO",
         "tag": [
-            "purple",
             "black"
         ],
         "hex": "#211E55",
@@ -5547,7 +5550,6 @@
         "name": "茄子紺",
         "pinyin": "NASUKON",
         "tag": [
-            "red",
             "purple"
         ],
         "hex": "#572A3F",
@@ -5673,8 +5675,8 @@
         "name": "牡丹",
         "pinyin": "BOTAN",
         "tag": [
-            "purple",
-            "pink"
+            "pink",
+            "purple"
         ],
         "hex": "#C1328E",
         "rgb": {
@@ -5699,7 +5701,6 @@
         "name": "梅紫",
         "pinyin": "UMEMURASAKI",
         "tag": [
-            "red",
             "purple"
         ],
         "hex": "#A8497A",
@@ -5725,7 +5726,8 @@
         "name": "似紫",
         "pinyin": "NISEMURASAKI",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#562E37",
         "rgb": {
@@ -5750,9 +5752,9 @@
         "name": "躑躅",
         "pinyin": "TSUTSUJI",
         "tag": [
+            "pink",
             "red",
-            "purple",
-            "pink"
+            "purple"
         ],
         "hex": "#E03C8A",
         "rgb": {
@@ -6064,9 +6066,7 @@
         "id": 5243,
         "name": "紅消鼠",
         "pinyin": "BENIKESHINEZUMI",
-        "tag": [
-            "orange"
-        ],
+        "tag": [],
         "hex": "#52433D",
         "rgb": {
             "r": 82,

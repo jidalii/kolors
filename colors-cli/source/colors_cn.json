@@ -4,8 +4,8 @@
         "name": "暗玉紫",
         "pinyin": "anyuzi",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#5c2223",
         "rgb": {
@@ -55,6 +55,7 @@
         "name": "栗紫",
         "pinyin": "lizi",
         "tag": [
+            "black",
             "red",
             "brown"
         ],
@@ -106,7 +107,7 @@
         "name": "葡萄酱紫",
         "pinyin": "putaojiangzi",
         "tag": [
-            "red",
+            "black",
             "brown"
         ],
         "hex": "#5a1216",
@@ -332,8 +333,8 @@
         "name": "苋菜红",
         "pinyin": "xiancaihong",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#a61b29",
         "rgb": {
@@ -483,8 +484,8 @@
         "name": "枣红",
         "pinyin": "zaohong",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#7c1823",
         "rgb": {
@@ -509,6 +510,7 @@
         "name": "猪肝紫",
         "pinyin": "zhuganzi",
         "tag": [
+            "black",
             "red",
             "brown"
         ],
@@ -535,7 +537,7 @@
         "name": "葡萄紫",
         "pinyin": "putaozi",
         "tag": [
-            "red",
+            "black",
             "brown"
         ],
         "hex": "#4c1f24",
@@ -561,8 +563,8 @@
         "name": "暗紫苑红",
         "pinyin": "anziyuanhong",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#82202b",
         "rgb": {
@@ -587,8 +589,8 @@
         "name": "殷红",
         "pinyin": "yanhong",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#82111f",
         "rgb": {
@@ -638,9 +640,8 @@
         "name": "酱紫",
         "pinyin": "jiangzi",
         "tag": [
-            "red",
-            "brown",
-            "black"
+            "black",
+            "brown"
         ],
         "hex": "#4d1018",
         "rgb": {
@@ -890,9 +891,8 @@
         "name": "金鱼紫",
         "pinyin": "jinyuzi",
         "tag": [
-            "red",
-            "brown",
-            "black"
+            "black",
+            "brown"
         ],
         "hex": "#500a16",
         "rgb": {
@@ -942,8 +942,8 @@
         "name": "鼠背灰",
         "pinyin": "shubeihui",
         "tag": [
-            "red",
-            "grey"
+            "grey",
+            "red"
         ],
         "hex": "#73575c",
         "rgb": {
@@ -993,8 +993,8 @@
         "name": "甘蔗紫",
         "pinyin": "ganzhezi",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#621624",
         "rgb": {
@@ -1019,7 +1019,8 @@
         "name": "月季红",
         "pinyin": "yuejihong",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#ce5777",
         "rgb": {
@@ -1069,8 +1070,9 @@
         "name": "水红",
         "pinyin": "shuihong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#f1c4cd",
         "rgb": {
@@ -1095,8 +1097,9 @@
         "name": "姜红",
         "pinyin": "jianghong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#eeb8c3",
         "rgb": {
@@ -1146,7 +1149,6 @@
         "name": "茄皮紫",
         "pinyin": "qiepizi",
         "tag": [
-            "red",
             "black"
         ],
         "hex": "#2d0c13",
@@ -1222,8 +1224,9 @@
         "name": "粉团花红",
         "pinyin": "fentuanhuahong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ec9bad",
         "rgb": {
@@ -1248,6 +1251,7 @@
         "name": "石竹紫",
         "pinyin": "shizhuzi",
         "tag": [
+            "black",
             "red",
             "brown"
         ],
@@ -1299,8 +1303,9 @@
         "name": "晶红",
         "pinyin": "jinghong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#eea6b7",
         "rgb": {
@@ -1325,7 +1330,8 @@
         "name": "芝兰紫",
         "pinyin": "zhilanzi",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#e9ccd3",
         "rgb": {
@@ -1350,8 +1356,9 @@
         "name": "芍药耕红",
         "pinyin": "shaoyaogenghong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#eba0b3",
         "rgb": {
@@ -1401,8 +1408,9 @@
         "name": "豇豆红",
         "pinyin": "jiangdouhong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ed9db2",
         "rgb": {
@@ -1427,8 +1435,9 @@
         "name": "报春红",
         "pinyin": "baochunhong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ec8aa4",
         "rgb": {
@@ -1453,8 +1462,9 @@
         "name": "淡绛红",
         "pinyin": "danjianghong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ec7696",
         "rgb": {
@@ -1479,8 +1489,9 @@
         "name": "凤仙花红",
         "pinyin": "fengxianhuahong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ea7293",
         "rgb": {
@@ -1505,8 +1516,9 @@
         "name": "霞光红",
         "pinyin": "xiaguanghong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ef82a0",
         "rgb": {
@@ -1556,8 +1568,9 @@
         "name": "夹竹桃红",
         "pinyin": "jiazhutaohong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#eb507e",
         "rgb": {
@@ -1607,8 +1620,9 @@
         "name": "莲瓣红",
         "pinyin": "lianbanhong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ea517f",
         "rgb": {
@@ -1633,7 +1647,8 @@
         "name": "白芨红",
         "pinyin": "baijihong",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#de7897",
         "rgb": {
@@ -1709,7 +1724,8 @@
         "name": "酢酱草红",
         "pinyin": "cujiangcaohong",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#c5708b",
         "rgb": {
@@ -1734,7 +1750,6 @@
         "name": "火鹅紫",
         "pinyin": "huoezi",
         "tag": [
-            "red",
             "black"
         ],
         "hex": "#33141e",
@@ -1760,7 +1775,8 @@
         "name": "鹞冠紫",
         "pinyin": "yaoguanzi",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#621d34",
         "rgb": {
@@ -1785,8 +1801,9 @@
         "name": "品红",
         "pinyin": "pinhong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ef3473",
         "rgb": {
@@ -1836,7 +1853,6 @@
         "name": "墨紫",
         "pinyin": "mozi",
         "tag": [
-            "red",
             "black"
         ],
         "hex": "#310f1b",
@@ -1862,7 +1878,6 @@
         "name": "檀紫",
         "pinyin": "tanzi",
         "tag": [
-            "red",
             "black"
         ],
         "hex": "#381924",
@@ -1888,8 +1903,9 @@
         "name": "初荷红",
         "pinyin": "chuhehong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#e16c96",
         "rgb": {
@@ -1914,7 +1930,8 @@
         "name": "菜头紫",
         "pinyin": "caitouzi",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#951c48",
         "rgb": {
@@ -1939,7 +1956,8 @@
         "name": "葡萄酒红",
         "pinyin": "putaojiuhong",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#62102e",
         "rgb": {
@@ -1964,7 +1982,6 @@
         "name": "淡青紫",
         "pinyin": "danqingzi",
         "tag": [
-            "red",
             "purple"
         ],
         "hex": "#e0c8d1",
@@ -1990,8 +2007,9 @@
         "name": "菠根红",
         "pinyin": "bogenhong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#d13c74",
         "rgb": {
@@ -2016,7 +2034,7 @@
         "name": "海象紫",
         "pinyin": "haixiangzi",
         "tag": [
-            "red"
+            "black"
         ],
         "hex": "#4b1e2f",
         "rgb": {
@@ -2041,8 +2059,9 @@
         "name": "兔眼红",
         "pinyin": "tuyanhong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ec4e8a",
         "rgb": {
@@ -2067,8 +2086,9 @@
         "name": "嫩菱红",
         "pinyin": "nenlinghong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#de3f7c",
         "rgb": {
@@ -2093,7 +2113,8 @@
         "name": "洋葱紫",
         "pinyin": "yangcongzi",
         "tag": [
-            "red"
+            "red",
+            "purple"
         ],
         "hex": "#a8456b",
         "rgb": {
@@ -2144,7 +2165,6 @@
         "name": "绀紫",
         "pinyin": "ganzi",
         "tag": [
-            "red",
             "black"
         ],
         "hex": "#461629",
@@ -2170,8 +2190,9 @@
         "name": "紫荆红",
         "pinyin": "zijinghong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ee2c79",
         "rgb": {
@@ -2196,8 +2217,9 @@
         "name": "扁豆花红",
         "pinyin": "biandouhuahong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ef498b",
         "rgb": {
@@ -2222,7 +2244,6 @@
         "name": "马鞭草紫",
         "pinyin": "mabiancaozi",
         "tag": [
-            "red",
             "purple",
             "white"
         ],
@@ -2249,8 +2270,9 @@
         "name": "藏花红",
         "pinyin": "canghuahong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#ec2d7a",
         "rgb": {
@@ -2275,7 +2297,6 @@
         "name": "斑鸠灰",
         "pinyin": "banjiuhui",
         "tag": [
-            "red",
             "purple"
         ],
         "hex": "#482936",
@@ -2301,7 +2322,6 @@
         "name": "古铜紫",
         "pinyin": "gutongzi",
         "tag": [
-            "red",
             "black"
         ],
         "hex": "#440e25",
@@ -2378,8 +2398,9 @@
         "name": "玫瑰红",
         "pinyin": "meiguihong",
         "tag": [
+            "pink",
             "red",
-            "pink"
+            "purple"
         ],
         "hex": "#d2357d",
         "rgb": {
@@ -2404,7 +2425,7 @@
         "name": "古鼎灰",
         "pinyin": "gudinghui",
         "tag": [
-            "grey"
+            "black"
         ],
         "hex": "#36292f",
         "rgb": {
@@ -2429,7 +2450,6 @@
         "name": "菱锰红",
         "pinyin": "lingmenghong",
         "tag": [
-            "red",
             "purple"
         ],
         "hex": "#d276a3",
@@ -2480,7 +2500,6 @@
         "name": "龙须红",
         "pinyin": "longxuhong",
         "tag": [
-            "red",
             "purple"
         ],
         "hex": "#cc5595",
@@ -2531,7 +2550,6 @@
         "name": "玫瑰紫",
         "pinyin": "meiguizi",
         "tag": [
-            "red",
             "purple"
         ],
         "hex": "#ba2f7b",
@@ -2557,7 +2575,6 @@
         "name": "苋菜紫",
         "pinyin": "xiancaizi",
         "tag": [
-            "red",
             "purple"
         ],
         "hex": "#9b1e64",
@@ -2683,7 +2700,6 @@
         "name": "荸荠紫",
         "pinyin": "biqizi",
         "tag": [
-            "purple",
             "black"
         ],
         "hex": "#411c35",
@@ -3305,7 +3321,7 @@
         "name": "水牛灰",
         "pinyin": "shuiniuhui",
         "tag": [
-            "grey"
+            "black"
         ],
         "hex": "#2f2f35",
         "rgb": {
@@ -3380,7 +3396,6 @@
         "name": "晶石紫",
         "pinyin": "jingshizi",
         "tag": [
-            "purple",
             "black"
         ],
         "hex": "#1f2040",
@@ -3481,7 +3496,7 @@
         "name": "牛角灰",
         "pinyin": "niujiaohui",
         "tag": [
-            "grey"
+            "black"
         ],
         "hex": "#2d2e36",
         "rgb": {
@@ -3556,7 +3571,6 @@
         "name": "钢蓝",
         "pinyin": "ganglan",
         "tag": [
-            "blue",
             "black"
         ],
         "hex": "#0f1423",
@@ -3657,7 +3671,6 @@
         "name": "鸽蓝",
         "pinyin": "gelan",
         "tag": [
-            "blue",
             "black"
         ],
         "hex": "#1c2938",
@@ -3683,7 +3696,6 @@
         "name": "暗蓝",
         "pinyin": "anlan",
         "tag": [
-            "blue",
             "black"
         ],
         "hex": "#101f30",
@@ -3709,7 +3721,6 @@
         "name": "钢青",
         "pinyin": "gangqing",
         "tag": [
-            "blue",
             "black"
         ],
         "hex": "#142334",
@@ -4752,7 +4763,6 @@
         "name": "深灰蓝",
         "pinyin": "shenhuilan",
         "tag": [
-            "blue",
             "black"
         ],
         "hex": "#132c33",
@@ -6248,7 +6258,6 @@
         "name": "云杉绿",
         "pinyin": "yunshanlv",
         "tag": [
-            "green",
             "black"
         ],
         "hex": "#15231b",
@@ -6470,7 +6479,7 @@
         "name": "槲寄生绿",
         "pinyin": "hujishenglv",
         "tag": [
-            "grey"
+            "black"
         ],
         "hex": "#2b312c",
         "rgb": {
@@ -7940,8 +7949,8 @@
         "name": "杏仁黄",
         "pinyin": "xingrenhuang",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f7e8aa",
         "rgb": {
@@ -8316,8 +8325,8 @@
         "name": "蚌肉白",
         "pinyin": "bangroubai",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f9f1db",
         "rgb": {
@@ -8542,8 +8551,8 @@
         "name": "豆汁黄",
         "pinyin": "douzhihuang",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f8e8c1",
         "rgb": {
@@ -8693,8 +8702,8 @@
         "name": "鱼肚白",
         "pinyin": "yudubai",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f7f4ed",
         "rgb": {
@@ -9019,8 +9028,8 @@
         "name": "荔肉白",
         "pinyin": "liroubai",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f2e6ce",
         "rgb": {
@@ -9045,8 +9054,8 @@
         "name": "淡肉色",
         "pinyin": "danrouse",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f8e0b0",
         "rgb": {
@@ -9121,8 +9130,8 @@
         "name": "汉白玉",
         "pinyin": "hanbaiyu",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f8f4ed",
         "rgb": {
@@ -9272,8 +9281,8 @@
         "name": "粉白",
         "pinyin": "fenbai",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#fbf2e3",
         "rgb": {
@@ -9640,8 +9649,8 @@
         "name": "落英淡粉",
         "pinyin": "luoyingdanfen",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f9e8d0",
         "rgb": {
@@ -10160,8 +10169,8 @@
         "name": "荷花白",
         "pinyin": "hehuabai",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#fbecde",
         "rgb": {
@@ -10211,8 +10220,8 @@
         "name": "淡米粉",
         "pinyin": "danmifen",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#fbeee2",
         "rgb": {
@@ -10286,9 +10295,7 @@
         "id": 410,
         "name": "茶褐",
         "pinyin": "chahe",
-        "tag": [
-            "orange"
-        ],
+        "tag": [],
         "hex": "#5d3d21",
         "rgb": {
             "r": 93,
@@ -10311,9 +10318,7 @@
         "id": 411,
         "name": "驼色",
         "pinyin": "tuose",
-        "tag": [
-            "orange"
-        ],
+        "tag": [],
         "hex": "#66462a",
         "rgb": {
             "r": 102,
@@ -10462,8 +10467,7 @@
         "name": "古铜褐",
         "pinyin": "gutonghe",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#5c3719",
         "rgb": {
@@ -10686,8 +10690,8 @@
         "name": "米色",
         "pinyin": "mise",
         "tag": [
-            "white",
-            "yellow"
+            "yellow",
+            "white"
         ],
         "hex": "#f9e9cd",
         "rgb": {
@@ -11363,8 +11367,7 @@
         "name": "丁香棕",
         "pinyin": "dingxiangzong",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#71361d",
         "rgb": {
@@ -11464,8 +11467,7 @@
         "name": "筍皮棕",
         "pinyin": "sunpizong",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#732e12",
         "rgb": {
@@ -11566,7 +11568,7 @@
         "name": "珠母灰",
         "pinyin": "zhumuhui",
         "tag": [
-            "orange"
+            "brown"
         ],
         "hex": "#64483d",
         "rgb": {
@@ -11616,6 +11618,7 @@
         "name": "落霞红",
         "pinyin": "luoxiahong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#cf4813",
@@ -11692,8 +11695,7 @@
         "name": "咖啡",
         "pinyin": "kafei",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#753117",
         "rgb": {
@@ -11718,8 +11720,7 @@
         "name": "中灰驼",
         "pinyin": "zhonghuituo",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#603d30",
         "rgb": {
@@ -11744,8 +11745,7 @@
         "name": "椰壳棕",
         "pinyin": "yekezong",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#883a1e",
         "rgb": {
@@ -11846,7 +11846,7 @@
         "name": "淡铁灰",
         "pinyin": "dantiehui",
         "tag": [
-            "orange"
+            "brown"
         ],
         "hex": "#5b423a",
         "rgb": {
@@ -11871,7 +11871,7 @@
         "name": "石板灰",
         "pinyin": "shibanhui",
         "tag": [
-            "orange"
+            "brown"
         ],
         "hex": "#624941",
         "rgb": {
@@ -11896,8 +11896,7 @@
         "name": "淡栗棕",
         "pinyin": "danlizong",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#673424",
         "rgb": {
@@ -11922,6 +11921,7 @@
         "name": "银朱",
         "pinyin": "yinzhu",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f43e06",
@@ -11997,6 +11997,7 @@
         "name": "朱红",
         "pinyin": "zhuhong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#ed5126",
@@ -12022,6 +12023,7 @@
         "name": "榴花红",
         "pinyin": "liuhuahong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f34718",
@@ -12047,6 +12049,7 @@
         "name": "柿红",
         "pinyin": "shihong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f2481b",
@@ -12072,8 +12075,7 @@
         "name": "可可棕",
         "pinyin": "kekezong",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#652b1c",
         "rgb": {
@@ -12123,6 +12125,7 @@
         "name": "大红",
         "pinyin": "dahong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f04b22",
@@ -12149,7 +12152,7 @@
         "pinyin": "zhayezong",
         "tag": [
             "brown",
-            "orange"
+            "red"
         ],
         "hex": "#692a1b",
         "rgb": {
@@ -12174,6 +12177,7 @@
         "name": "蜻蜓红",
         "pinyin": "qingtinghong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f1441d",
@@ -12199,8 +12203,7 @@
         "name": "橡树棕",
         "pinyin": "xiangshuzong",
         "tag": [
-            "brown",
-            "orange"
+            "brown"
         ],
         "hex": "#773d31",
         "rgb": {
@@ -12276,7 +12279,7 @@
         "pinyin": "huoyanzong",
         "tag": [
             "brown",
-            "orange"
+            "red"
         ],
         "hex": "#863020",
         "rgb": {
@@ -12328,7 +12331,7 @@
         "pinyin": "zheshi",
         "tag": [
             "brown",
-            "orange"
+            "red"
         ],
         "hex": "#862617",
         "rgb": {
@@ -12378,6 +12381,7 @@
         "name": "胭脂红",
         "pinyin": "yanzhihong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f03f24",
@@ -12478,6 +12482,7 @@
         "name": "曲红",
         "pinyin": "quhong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f05a46",
@@ -12503,6 +12508,7 @@
         "name": "谷鞘红",
         "pinyin": "guqiaohong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f17666",
@@ -12528,6 +12534,7 @@
         "name": "苹果红",
         "pinyin": "pingguohong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f15642",
@@ -12553,6 +12560,7 @@
         "name": "桂红",
         "pinyin": "guihong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f25a47",
@@ -12578,6 +12586,7 @@
         "name": "粉红",
         "pinyin": "fenhong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f2b9b2",
@@ -12604,7 +12613,7 @@
         "pinyin": "antuozong",
         "tag": [
             "brown",
-            "orange"
+            "red"
         ],
         "hex": "#592620",
         "rgb": {
@@ -12704,8 +12713,9 @@
         "name": "火山棕",
         "pinyin": "huoshanzong",
         "tag": [
-            "brown",
-            "orange"
+            "black",
+            "red",
+            "brown"
         ],
         "hex": "#482522",
         "rgb": {
@@ -12730,8 +12740,8 @@
         "name": "栗棕",
         "pinyin": "lizong",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#5c1e19",
         "rgb": {
@@ -12781,6 +12791,7 @@
         "name": "舌红",
         "pinyin": "shehong",
         "tag": [
+            "red",
             "orange"
         ],
         "hex": "#f19790",
@@ -12831,8 +12842,8 @@
         "name": "酱棕",
         "pinyin": "jiangzong",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#5a1f1b",
         "rgb": {
@@ -12930,8 +12941,8 @@
         "name": "覆盆子红",
         "pinyin": "fupenzihong",
         "tag": [
-            "red",
-            "brown"
+            "brown",
+            "red"
         ],
         "hex": "#ac1f18",
         "rgb": {
@@ -12981,9 +12992,8 @@
         "name": "豆沙",
         "pinyin": "dousha",
         "tag": [
-            "red",
-            "brown",
-            "black"
+            "black",
+            "brown"
         ],
         "hex": "#481e1c",
         "rgb": {
@@ -13108,7 +13118,8 @@
         "name": "玫瑰灰",
         "pinyin": "meiguihui",
         "tag": [
-            "orange"
+            "brown",
+            "red"
         ],
         "hex": "#4b2e2b",
         "rgb": {
@@ -13183,6 +13194,7 @@
         "name": "貂紫",
         "pinyin": "diaozi",
         "tag": [
+            "brown",
             "red"
         ],
         "hex": "#5d3131",
