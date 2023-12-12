@@ -2,9 +2,9 @@
 import React from 'react';
 import {render} from 'ink';
 import meow from 'meow';
-import App from './app.jsx';
+import App from './app.js';
 
-const defaultColorset = process.env.KOLORS_DEFAULT_COLORSET || 'cn';
+const defaultColorset = process.env.KOLORS_DEFAULT_COLORSET || 'c';
 const defaultColorModel = process.env.KOLORS_DEFAULT_COLORSET || 'hex';
 
 const cli = meow(
@@ -39,7 +39,7 @@ const cli = meow(
 			c: {
 				type: 'string',
 				// alias: 'c',
-				choices: ['cn', 'jp'],
+			choices: ['c', 'j'],
 				default: defaultColorset,
 			},
 			m: {
@@ -47,6 +47,10 @@ const cli = meow(
 				// alias: 'm',
 				choices: ['hex', 'rgb', 'cmyk', 'hsl'],
 				default: defaultColorModel,
+			},
+			n: {
+				type: 'number',
+				default: 15,
 			},
 		},
 	},

@@ -18,10 +18,13 @@ const colorList = {
 	orange: '橙',
 	yellow: '黄',
 	green: '绿',
-	cyan: '青',
 	blue: '蓝',
 	purple: '紫',
 	grey: '灰',
+	brown: '棕',
+	white: '白',
+	pink: '粉',
+	black: '黑',
 };
 
 const chineseColorList = {
@@ -29,7 +32,6 @@ const chineseColorList = {
 	橙: 'orange',
 	黄: 'yellow',
 	绿: 'green',
-	青: 'cyan',
 	蓝: 'blue',
 	紫: 'purple',
 	灰: 'grey',
@@ -39,36 +41,55 @@ const chineseColorList = {
 	黑: 'black',
 };
 
-const shuffleArray = function (array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
+/**
+ * 
+ * @param {*} array array of colors
+ */
+const randomColors = function (array, limit) {
+	// if array length is less than limit, return entire array
+	if (array.length < limit) {
+		return array;
+	}
+	else {
+		// return colors up to limit while keeping order
+		let selectedIndexes = new Set();
+		while (selectedIndexes.size < limit) {
+			selectedIndexes.add(Math.floor(Math.random() * array.length));
+		}
+		return Array.from(selectedIndexes).sort((a, b) => a - b).map(index => array[index]);
 	}
 };
 
-const colorFilter = function (color, colorset) {
-	//  select colorset
-	let colorFile;
+/**
+ * select colorset based on flags
+ * @param {*} colorset 
+ * @returns colorset
+ */
+const selectColorSet = function (colorset) {
 	switch (colorset) {
-		case 'cn':
-			colorFile = colorsCN;
-			break;
-		case 'jp':
-			colorFile = colorsJP;
-			break;
+		case 'c':
+			return colorsCN;
+		case 'j':
+			return colorsJP;
 		default:
-			console.log('invalid colorset');
+			return colorsCN;
 	}
+}
 
+const colorFilter = function (color, flags) {
+	const colorFile = selectColorSet(flags?.c);
+
+	// turn chinese color into english
 	if (color in chineseColorList) {
 		color = chineseColorList[color];
 	}
 
+	// filter color
 	let filteredColor = colorFile.filter(c => c.tag.includes(color));
-	shuffleArray(filteredColor);
 
-	return filteredColor.slice(0, 10);
-	// return filteredColor;
+	const resultColors = randomColors(filteredColor, flags?.n);
+
+	return resultColors;
 };
 
 const chooseColorModel = function (color, flags) {
@@ -77,12 +98,15 @@ const chooseColorModel = function (color, flags) {
 	switch (flags.model) {
 		case 'rgb':
 			colorModel = `rgb(${color.rgb.r},${color.rgb.g},${color.rgb.b})`;
+			isValid = true;
 			break;
 		case 'hex':
 			colorModel = color.hex;
+			isValid = true;
 			break;
 		case 'cmyk':
 			colorModel = `cmyk(${color.cmyk.c},${color.cmyk.m},${color.cmyk.y},${color.cmyk.k})`;
+			isValid = true;
 			break;
 		default:
 			colorModel = color.hex;
@@ -91,10 +115,8 @@ const chooseColorModel = function (color, flags) {
 };
 
 const App = ({colorSelect = 'green', flags = null}) => {
-	let colorList = colorFilter(colorSelect, flags?.c);
-	const uniqueSet = new Set(colorList);
-	const hasDuplicates = uniqueSet.size !== colorList.length;
-	const value = hasDuplicates ? "duplicate" : "no duplicate";
+	let colorList = colorFilter(colorSelect, flags);
+
 	// Find the max length for hex codes and names for padding
 	const maxHexLength = Math.max(
 		...colorList.map(color => chooseColorModel(color, flags).length),
@@ -113,7 +135,6 @@ const App = ({colorSelect = 'green', flags = null}) => {
 
 				// Pad the hex code and name to have equal length
 				const paddedHex = colorText.padEnd('  ' + maxHexLength, ' ');
-				const paddedName = color.name.padEnd('  ' + maxNameLength, ' ');
 				const paddedPinyin = color.pinyin.padEnd('  ' + maxPinyinLength, ' ');
 
 				return (
@@ -127,7 +148,7 @@ const App = ({colorSelect = 'green', flags = null}) => {
 							{'  '}
 							{color.name}{' '}
 						</Text>
-						{/* <Text>{color.hsl.lightness + '\t' + color.hsl.saturation + '\t' + color.hsl.hue}</Text> */}
+						<Text >{color.hsl.hue + '\t' +color.hsl.saturation + '\t' + color.hsl.lightness}</Text>
 					</React.Fragment>
 				);
 			})}
