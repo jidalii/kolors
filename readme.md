@@ -19,11 +19,11 @@ $ kolors --help
     $ kolors <color> [options]
 
 		Options
-		  -c <colorset>\t\tChoose a color set.
-		  -m <color-model>\t\tChoose a color model.
-		  -n <number>\t\t\tChoose the number of colors shown.
-		  --help, -h\t\t\tShow help for commands.
-		  --version, -v\t\tShow the version of app.
+		  -c <colorset>         Choose a color set.
+		  -m <color-model>      Choose a color model.
+		  -n <number>           Choose the number of colors shown.
+		  --help, -h            Show help for commands.
+		  --version, -v         Show the version of app.
 
 		Examples
 		  $ kolors red
