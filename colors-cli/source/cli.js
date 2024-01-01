@@ -15,6 +15,7 @@ const cli = meow(
 		Options
 		  -c <colorset>\t\tChoose a color set.
 		  -m <color-model>\t\tChoose a color model.
+		  -n <number>\t\t\tChoose the number of colors shown.
 		  --help, -h\t\t\tShow help for commands.
 		  --version, -v\t\tShow the version of app.
 
