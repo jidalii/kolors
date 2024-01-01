@@ -33,6 +33,7 @@ const chineseColorList = {
 	黄: 'yellow',
 	绿: 'green',
 	蓝: 'blue',
+	青: "cyan",
 	紫: 'purple',
 	灰: 'grey',
 	棕: 'brown',
@@ -42,7 +43,7 @@ const chineseColorList = {
 };
 
 /**
- * 
+ *
  * @param {*} array array of colors
  */
 const randomColors = function (array, limit) {
@@ -62,7 +63,7 @@ const randomColors = function (array, limit) {
 
 /**
  * select colorset based on flags
- * @param {*} colorset 
+ * @param {*} colorset
  * @returns colorset
  */
 const selectColorSet = function (colorset) {
@@ -90,6 +91,7 @@ const colorFilter = function (color, flags) {
 	const resultColors = randomColors(filteredColor, flags?.n);
 
 	return resultColors;
+	// return filteredColor;
 };
 
 const chooseColorModel = function (color, flags) {
@@ -142,13 +144,13 @@ const App = ({colorSelect = 'green', flags = null}) => {
 						<Text
 							key={color.id}
 							backgroundColor={color.hex}
-							color={color.hsl.lightness >= 0.68 ? 'black' : 'white'}
+							color={color.hsl.lightness <= 0.65 ? 'white' : 'black'}
 						>
 							{' ' + paddedHex} {paddedPinyin}
 							{'  '}
 							{color.name}{' '}
 						</Text>
-						<Text >{color.hsl.hue + '\t' +color.hsl.saturation + '\t' + color.hsl.lightness}</Text>
+						{/* <Text >{color.hsl.hue + '\t' +color.hsl.saturation + '\t' + color.hsl.lightness}</Text> */}
 					</React.Fragment>
 				);
 			})}

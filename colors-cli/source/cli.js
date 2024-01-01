@@ -17,13 +17,13 @@ const cli = meow(
 		  -m <color-model>\t\tChoose a color model.
 		  --help, -h\t\t\tShow help for commands.
 		  --version, -v\t\tShow the version of app.
-		
+
 		Examples
 		  $ kolors red
-		  $ kolors red -c jp
+		  $ kolors red -c j
 		  $ kolors red -m rgb
-		  $ kolors red -c jp -m cmyk
-		  $ kolors 红 -c jp -m hsl
+		  $ kolors red -c j -m cmyk
+		  $ kolors 红 -c j -m hsl
 	`,
 	{
 		importMeta: import.meta,
@@ -50,7 +50,7 @@ const cli = meow(
 			},
 			n: {
 				type: 'number',
-				default: 15,
+				default: 10,
 			},
 		},
 	},
